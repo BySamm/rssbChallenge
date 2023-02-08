@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="The Suite"  thread-count="5">
+	
+  <listeners>
+	  <listener class-name="sams.work.rssbEvaluation.Listeners"></listener>
+  </listeners>	
+  <test name="Login">
+    <classes>
+      <class name="sams.work.rssbEvaluation.TC_01_SuccessfulLogin"/>
+    </classes>
+  </test>
+  <test name="Password">
+    <classes>
+      <class name="sams.work.rssbEvaluation.TC_02_IncorrectPassword"/>
+    </classes>
+  </test>
+  <test name="credentials">
+    <classes>
+      <class name="sams.work.rssbEvaluation.TC_03_IncorrectCredentials"/>
+    </classes>
+  </test> 
+  <test name="empty">
+    <classes>
+      <class name="sams.work.rssbEvaluation.TC_04_EmptyCredentials"/>
+    </classes>
+  </test>
+  <test name="AllTests">
+    <classes>
+      <class name="sams.work.rssbEvaluation.AllTests"/>
+    </classes>
+  </test>  
+   
+</suite> 
+
+
+
